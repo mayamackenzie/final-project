@@ -1,17 +1,34 @@
 // Custom.scss
 // Option A: Include all of Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
 
 // Include any default variable overrides here (though functions won't be available)
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+$body-bg: $secondary;
 
-// Then add additional custom code here
+// colors?
+$primary:#392A16;
+$secondary: #d9b99b;
+$light: #d9b99b;
+$dark: #392A16;
+
+
+
+// fonts
+$font-family-base: 'Source Sans 3', sans-serif;
+
+$headings-font-family: 'Sanchez', serif;
+$headings-font-weight: 400;
+
+$h1-font-size: 3.052rem;
 
 
 
 
 // nav stuff
 
+$navbar-dark-hover-color: $primary;
 
 
 // photos
@@ -23,7 +40,10 @@
 
 
 
-// colours
-$primary: #eed9c4;
-$secondary: #d9b99b;
+
+
+
+
+
+
 
