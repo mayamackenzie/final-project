@@ -25,25 +25,21 @@ $h1-font-size: 3.052rem;
 
 
 
-
 // nav stuff
 
 $navbar-dark-hover-color: $primary;
 
 
-// photos
-// $thumbnail-padding:                 .25rem;
-// $thumbnail-bg:                      var(--#{$prefix}body-bg);
-// $thumbnail-border-width:            var(--#{$prefix}border-width);
-// $thumbnail-border-color:            var(--#{$prefix}border-color);
-// $thumbnail-border-radius:           var(--#{$prefix}border-radius);
 
 
+// photo grid under main image (home)
 
-
-
-
-
+$thumbnail-padding:                 .25rem;
+$thumbnail-bg:                      var(--#{$prefix}body-bg);
+$thumbnail-border-width:            var(--#{$prefix}border-width);
+$thumbnail-border-color:            var(--#{$prefix}border-color);
+$thumbnail-border-radius:           var(--#{$prefix}border-radius);
+$thumbnail-box-shadow:              var(--#{$prefix}box-shadow-sm);
 
 
 
