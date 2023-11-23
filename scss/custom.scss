@@ -1,11 +1,11 @@
 // Custom.scss
 // Option A: Include all of Bootstrap
-@import "../node_modules/bootstrap/scss/bootstrap";
+
 
 
 // Include any default variable overrides here (though functions won't be available)
 
-$body-bg: $secondary;
+
 
 // colors?
 $primary:#392A16;
@@ -13,7 +13,7 @@ $secondary: #d9b99b;
 $light: #d9b99b;
 $dark: #392A16;
 
-
+$body-bg: $secondary;
 
 // fonts
 $font-family-base: 'Source Sans 3', sans-serif;
@@ -34,12 +34,13 @@ $navbar-dark-hover-color: $primary;
 
 // photo grid under main image (home)
 
-$thumbnail-padding:                 .25rem;
-$thumbnail-bg:                      var(--#{$prefix}body-bg);
-$thumbnail-border-width:            var(--#{$prefix}border-width);
-$thumbnail-border-color:            var(--#{$prefix}border-color);
-$thumbnail-border-radius:           var(--#{$prefix}border-radius);
-$thumbnail-box-shadow:              var(--#{$prefix}box-shadow-sm);
+// $thumbnail-padding:                 .25rem;
+// $thumbnail-bg:                      var(--#{$prefix}body-bg);
+// $thumbnail-border-width:            var(--#{$prefix}border-width);
+// $thumbnail-border-color:            var(--#{$prefix}border-color);
+// $thumbnail-border-radius:           var(--#{$prefix}border-radius);
+// $thumbnail-box-shadow:              var(--#{$prefix}box-shadow-sm);
 
 
 
+@import "../node_modules/bootstrap/scss/bootstrap";
