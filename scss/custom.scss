@@ -8,12 +8,26 @@
 
 
 // colors?
-$primary:#392A16;
+$primary:#392A16; 
 $secondary: #d9b99b;
 $light: #d9b99b;
 $dark: #392A16;
 
-$body-bg: $secondary;
+
+.bg-custom-beige {
+    background-color: #d9b99b;
+}
+
+.custom-navbar {
+    background-color: #392A16; // Light Blue color
+}
+
+
+.bg-custom-tan {
+  background-color:#bc9b71;
+}
+
+
 
 // fonts
 $font-family-base: 'Source Sans 3', sans-serif;
@@ -27,9 +41,9 @@ $h1-font-size: 3.052rem;
 
 // nav stuff
 
-$navbar-dark-hover-color: $primary;
-
-
+ #menu {
+      margin-top: 200px; /* Adjust the value as needed */
+    }
 
 
 // photo grid under main image (home)
@@ -41,6 +55,55 @@ $navbar-dark-hover-color: $primary;
 // $thumbnail-border-radius:           var(--#{$prefix}border-radius);
 // $thumbnail-box-shadow:              var(--#{$prefix}box-shadow-sm);
 
+
+
+
+
+// .square-container {
+//   position: relative;
+//   width: 100%;
+//   padding-top: 100%; // This creates a square container
+//   overflow: hidden; // Ensure the image doesn't overflow the container
+
+//   img {
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover; // Maintain the aspect ratio and cover the container
+//   }
+// }
+
+// // Apply the square-container class to each image
+// .col-md-3 {
+//   margin-bottom: 1rem; // Add some spacing between columns
+// }
+
+// // Additional styling for the img-thumbnail class
+// .img-thumbnail {
+//   border: 0; // Remove the default border
+//   border-radius: 0; // Remove the default border-radius
+// }
+
+
+
+
+
+
+
+
+// CONTACT PAGE
+
+.container-info {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 15px;
+grid-row-gap: 15px;
+}
+
+.info1 { grid-area: 1 / 1 / 2 / 3; }
+.info2 { grid-area: 2 / 1 / 3 / 3; }
+.div3 { grid-area: 1 / 3 / 3 / 6; }
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
