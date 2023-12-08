@@ -3,23 +3,146 @@
 
 
 
+
+// Breakpoints
+$small-screen: 320px;
+$medium-screen: 768px;
+$large-screen: 1024px;
+$extra-large-screen: 1440px;
+$larger-screen: 1920px;
+$ultra-large-screen: 2500px;
+
+
+
+
+
+$default-padding: 20px;
+$small-padding: 10px;
+
+
+
+/* Base styles for all screens */
+body {
+
+    $font-size-base: 16px;
+
+
+h1 {
+  font-weight: 900;
+  font-family: 'Roboto Slab', serif;
+  font-size: 4rem;
+}
+
+p {
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+#navigation.navbar {
+    
+    transition: height 0.3s ease;
+    height: auto;
+    width: 100%;
+
+}
+
+}
+
+
+
+// BREAKPOINT ADJUSTMENTS
+
+
+
+// 320px
+@media (min-width: $small-screen) {
+
+#navigation.navbar {
+    height: auto; // Adjust the height as needed for smaller screens
+    transition: height 0.3s ease;
+  }
+}
+
+// 768px
+@media (min-width: $medium-screen) {
+    #navigation.navbar {
+      height: fit-content;
+    transition: height 0.3s ease;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* Responsive styles for screens 1440px and larger */
+@media (min-width: $large-screen) {
+ #navigation.navbar {
+      height: fit-content;
+    transition: height 0.3s ease;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Responsive styles for screens 1920px and larger */
+@media (min-width: $extra-large-screen) {
+  .your-element {
+    width: 25%;
+    transition: height 0.3s ease;
+    /* Adjust styles for extra-large screens */
+  }
+}
+
+/* Responsive styles for screens 2500px and larger */
+@media (min-width: $larger-screen) {
+  .your-element {
+    /* Additional styles for larger screens */
+  }
+}
+
+
+
+
+
+
 // Include any default variable overrides here (though functions won't be available)
 
 
 
+
+
+// beige container top sec with logo
+
+.container-fluid {
+  .bg-custom-beige {
+    .row {
+      justify-content: center;
+
+      img {
+        width: 100px; // Set your desired width
+        height: 100px; // Maintain aspect ratio
+        display: block; // Ensure the image is treated as a block element
+      }
+    }
+  }
+}
+
+
+
+
 // colors?
-$primary:#392A16; 
-$secondary: #d9b99b;
-$light: #d9b99b;
-$dark: #392A16;
 
 
 .bg-custom-beige {
-    background-color: #d9b99b;
+    background-color: #BC9B71;
 }
 
 .custom-navbar {
-    background-color: #392A16; // Light Blue color
+    background-color: #392A16; 
 }
 
 
@@ -29,61 +152,51 @@ $dark: #392A16;
 
 
 
+
+
+.brown-button {
+  background-color: #392A16;
+  color: #bc9b71;
+  padding: 10px;
+  border-radius: 40px;
+  margin: auto;
+  border: none;
+}
+
+
 // fonts
-$font-family-base: 'Source Sans 3', sans-serif;
 
-$headings-font-family: 'Sanchez', serif;
-$headings-font-weight: 400;
 
-$h1-font-size: 3.052rem;
+
+
+
+
+
+
+
+
 
 
 
 // nav stuff
 
- #menu {
-      margin-top: 200px; /* Adjust the value as needed */
-    }
+
+
 
 
 // photo grid under main image (home)
 
-// $thumbnail-padding:                 .25rem;
-// $thumbnail-bg:                      var(--#{$prefix}body-bg);
-// $thumbnail-border-width:            var(--#{$prefix}border-width);
-// $thumbnail-border-color:            var(--#{$prefix}border-color);
-// $thumbnail-border-radius:           var(--#{$prefix}border-radius);
-// $thumbnail-box-shadow:              var(--#{$prefix}box-shadow-sm);
+.col-md-6 {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
 
 
 
-
-
-// .square-container {
-//   position: relative;
-//   width: 100%;
-//   padding-top: 100%; // This creates a square container
-//   overflow: hidden; // Ensure the image doesn't overflow the container
-
-//   img {
-//     position: absolute;
-//     width: 100%;
-//     height: 100%;
-//     object-fit: cover; // Maintain the aspect ratio and cover the container
-//   }
-// }
-
-// // Apply the square-container class to each image
-// .col-md-3 {
-//   margin-bottom: 1rem; // Add some spacing between columns
-// }
-
-// // Additional styling for the img-thumbnail class
-// .img-thumbnail {
-//   border: 0; // Remove the default border
-//   border-radius: 0; // Remove the default border-radius
-// }
-
+ .inline-flex-container {
+  display: inline-flex;
+  border: 0;
+}
 
 
 
