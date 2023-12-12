@@ -24,36 +24,55 @@
 
 
 <body class="bg-custom-beige">
-<main>
+<main class="main pb-5">
 
 
 
 <!-- top beige block sec with logo -->
+<!-- top beige block sec with logo -->
 <header>
-<div class="container-fluid">
+<div class="container-fluid px-0">
   <div class="bg-custom-beige py-5">
     <div class="row justify-content-center">
     <img src="/optimized-imgs/logo.png" class="img-fluid" alt="Centered Image">
   </div>
 </div>
 
-<!-- nav bar -->
-<nav id="navigation" class="navbar navbar-expand-lg navbar-dark custom-navbar sticky-top">
+
+<nav id="navigation">
+<nav class="navbar navbar-expand-md navbar-dark custom-navbar sticky-top">
   <div class="container-fluid">
-    <div class="collapse navbar-collapse">
-      <ul class="navbar-nav mx-auto "> 
-        <li class="nav-item px-3"><a href="http://" class="nav-link">Home</a></li>
-        <li class="nav-item px-3"><a href="http://" class="nav-link">About</a></li>
-        <li class="nav-item px-3"><a href="http://" class="nav-link">Our Artists</a></li>
-        <li class="nav-item px-3"><a href="/booking.html" class="nav-link">Book Your Tattoo</a></li>
-        <li class="nav-item px-3"><a href="/contact.html" class="nav-link">Contact Us</a></li>
-        <li class="nav-item px-3"><a href="http://" class="nav-link">FAQ</a></li>
-      </ul>
-    </div>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon">
+    </span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item px-5">
+        <a class="nav-link" href="index.html">HOME</a>
+      </li>
+      <li class="nav-item px-5">
+        <a class="nav-link" href="#">ABOUT</a>
+      </li>
+      <li class="nav-item px-5">
+        <a class="nav-link" href="#">OUR ARTISTS</a>
+      </li> 
+      <li class="nav-item px-5">
+        <a class="nav-link" href="booking.html">BOOK YOUR TATTOO</a>
+      </li>  
+      <li class="nav-item px-5">
+        <a class="nav-link" href="contact.html">CONTACT</a>
+      </li>      
+      <li class="nav-item px-5">
+        <a class="nav-link" href="#">FAQ</a>
+      </li>    
+    </ul>
+  </div>  
   </div>
-</div>
+  </div>
 </nav>
-</header>
+</nav>
+
 
 
 <style>
@@ -67,7 +86,7 @@
 
 <div class="wrapper-flex-column">      
 <div class="row px-5">
-  <div class="col-md-8 pb-5">
+  <div class="col-md-8 pb-2">
   <img src="/optimized-imgs/railbender-optimized.jpg" class="img-fluid py-3" alt="main-image">
     <div class="inline-flex-container">
         <div class="row align-items-start">
@@ -104,7 +123,7 @@
 <div class="col-md-4">
     <div class="container px-0 pt-4 bg-custom-beige">
       <div class="row">
-        <h1 class="custom-heading">Welcome to Railbender!</h1>
+        <h1>Welcome to Railbender!</h1>
             
             <p class="pt-2">Located in Ottawa, Railbender Studio is Hintonburg's newest tattoo studio & art gallery. Passionate about tattoos, fascinated with all things art.
           </p>
@@ -130,7 +149,7 @@
   <!-- Javascript before footer -->
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-  <footer class="py-2 bg-dark">
+  <footer class="py-2 bg-custom-brown">
     <div class="container">
       <p class="text-center text-light m-auto">&copy; Railbender Studios</p>
     </div>

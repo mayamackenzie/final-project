@@ -16,8 +16,7 @@ $ultra-large-screen: 2500px;
 
 
 
-$default-padding: 20px;
-$small-padding: 10px;
+
 
 
 
@@ -31,13 +30,14 @@ h1 {
   font-weight: 900;
   font-family: 'Roboto Slab', serif;
   font-size: 4rem;
+  
 }
 
 p {
   font-family: 'Source Sans 3', sans-serif;
 }
 
-#navigation.navbar {
+.navbar {
     
     transition: height 0.3s ease;
     height: auto;
@@ -45,71 +45,96 @@ p {
 
 }
 
+a {
+  text-decoration: none;
+  color: #392A16;
 }
 
 
 
-// BREAKPOINT ADJUSTMENTS
+
+}
+
+
+
+@media (min-width: $small-screen) and (max-width:$medium-screen) {
+    .h1 {
+      font-size: 10pt;
+      text-wrap: balance;
+    }
+
+    .navbar {
+      width: 100%;
+      width: max-content;
+    }
+
+  }
+
+
+
+@media (max-width: $medium-screen) {
+    .h1 {
+      font-size: 30pt;
+    }
+
+    .container-fluid {
+      padding-bottom: 20px;
+    }
+  }
+
+  /* Medium screens */
+  @media (min-width: $medium-screen) and (max-width:$large-screen) {
+    .h1 {
+      font-size: 10pt;
+    }
+
+    .navbar {
+      width: 100%;
+    }
+
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+// BREAKPOINT ADJUSTMENTS OLDD
 
 
 
 // 320px
-@media (min-width: $small-screen) {
+// @media (min-width: $small-screen) {
 
-#navigation.navbar {
-    height: auto; // Adjust the height as needed for smaller screens
-    transition: height 0.3s ease;
-  }
-}
+// #navigation.navbar {
+//     height: auto; // Adjust the height as needed for smaller screens
+//     transition: height 0.3s ease;
+//     width: 100%;
+//   }
+// }
 
-// 768px
-@media (min-width: $medium-screen) {
-    #navigation.navbar {
-      height: fit-content;
-    transition: height 0.3s ease;
-  }
-}
-
-
-
+// // 768px
+// @media (min-width: $medium-screen) {
+//     #navigation.navbar {
+//       height: fit-content;
+//     transition: height 0.3s ease;
+//   }
+// }
 
 
 
 
 
 
-/* Responsive styles for screens 1440px and larger */
-@media (min-width: $large-screen) {
- #navigation.navbar {
-      height: fit-content;
-    transition: height 0.3s ease;
-    width: 100%;
-    height: auto;
-  }
-}
-
-/* Responsive styles for screens 1920px and larger */
-@media (min-width: $extra-large-screen) {
-  .your-element {
-    width: 25%;
-    transition: height 0.3s ease;
-    /* Adjust styles for extra-large screens */
-  }
-}
-
-/* Responsive styles for screens 2500px and larger */
-@media (min-width: $larger-screen) {
-  .your-element {
-    /* Additional styles for larger screens */
-  }
-}
 
 
-
-
-
-
-// Include any default variable overrides here (though functions won't be available)
 
 
 
@@ -141,8 +166,14 @@ p {
     background-color: #BC9B71;
 }
 
+.bg-custom-brown {
+    background-color: #392A16;
+  width: 100%;
+}
+
 .custom-navbar {
     background-color: #392A16; 
+    width: max-content;
 }
 
 
@@ -150,7 +181,13 @@ p {
   background-color:#bc9b71;
 }
 
+.bg-custom-fade {
+  background-color: white;opacity: 75%;
+}
 
+.bg-custom-fade-block {
+  background-color: white;opacity: 75%;
+}
 
 
 
@@ -161,6 +198,7 @@ p {
   border-radius: 40px;
   margin: auto;
   border: none;
+  opacity: 100%;
 }
 
 
@@ -179,7 +217,6 @@ p {
 
 
 // nav stuff
-
 
 
 
@@ -206,17 +243,45 @@ p {
 
 // CONTACT PAGE
 
-.container-info {
-display: grid;
-grid-template-columns: repeat(5, 1fr);
-grid-template-rows: repeat(2, 1fr);
-grid-column-gap: 15px;
-grid-row-gap: 15px;
+.text-lg {
+  font-size: 1.5rem;
 }
 
-.info1 { grid-area: 1 / 1 / 2 / 3; }
-.info2 { grid-area: 2 / 1 / 3 / 3; }
-.div3 { grid-area: 1 / 3 / 3 / 6; }
+.text-md {
+  font-size: 1rem;
+}
+
+
+.bg-contact-bg {
+  background-image: url('/optimized-imgs/front-room-plant-optimized.jpg'); 
+      background-position: center;
+      background-repeat:no-repeat;
+      height: 100%; 
+      width: 100%;
+      object-fit: cover;
+    }
+
+
+// BOOKING PAGE
+
+ .book-container h1,
+.book-txt p,
+.container-btn {
+  opacity: 1; /* Full opacity for text and button */
+}
+
+
+.booking-bg {
+  background-size:auto;
+  background-image: url('/optimized-imgs/front-desk-optimized.jpeg'); 
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh; 
+    }
+
+
+
+
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";

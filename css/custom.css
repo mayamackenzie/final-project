@@ -8,45 +8,41 @@ body h1, body .h1 {
 body p {
   font-family: "Source Sans 3", sans-serif;
 }
-body #navigation.navbar {
+body .navbar {
   transition: height 0.3s ease;
   height: auto;
   width: 100%;
 }
+body a {
+  text-decoration: none;
+  color: #392A16;
+}
 
-@media (min-width: 320px) {
-  #navigation.navbar {
-    height: auto;
-    transition: height 0.3s ease;
+@media (min-width: 320px) and (max-width: 768px) {
+  .h1 {
+    font-size: 10pt;
+    text-wrap: balance;
   }
-}
-@media (min-width: 768px) {
-  #navigation.navbar {
-    height: fit-content;
-    transition: height 0.3s ease;
-  }
-}
-/* Responsive styles for screens 1440px and larger */
-@media (min-width: 1024px) {
-  #navigation.navbar {
-    height: fit-content;
-    transition: height 0.3s ease;
+  .navbar {
     width: 100%;
-    height: auto;
+    width: max-content;
   }
 }
-/* Responsive styles for screens 1920px and larger */
-@media (min-width: 1440px) {
-  .your-element {
-    width: 25%;
-    transition: height 0.3s ease;
-    /* Adjust styles for extra-large screens */
+@media (max-width: 768px) {
+  .h1 {
+    font-size: 30pt;
+  }
+  .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
+    padding-bottom: 20px;
   }
 }
-/* Responsive styles for screens 2500px and larger */
-@media (min-width: 1920px) {
-  .your-element {
-    /* Additional styles for larger screens */
+/* Medium screens */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .h1 {
+    font-size: 10pt;
+  }
+  .navbar {
+    width: 100%;
   }
 }
 .container-fluid .bg-custom-beige .row, .container-xxl .bg-custom-beige .row, .container-xl .bg-custom-beige .row, .container-lg .bg-custom-beige .row, .container-md .bg-custom-beige .row, .container-sm .bg-custom-beige .row {
@@ -62,12 +58,28 @@ body #navigation.navbar {
   background-color: #BC9B71;
 }
 
+.bg-custom-brown {
+  background-color: #392A16;
+  width: 100%;
+}
+
 .custom-navbar {
   background-color: #392A16;
+  width: max-content;
 }
 
 .bg-custom-tan {
   background-color: #bc9b71;
+}
+
+.bg-custom-fade {
+  background-color: white;
+  opacity: 75%;
+}
+
+.bg-custom-fade-block {
+  background-color: white;
+  opacity: 75%;
 }
 
 .brown-button {
@@ -77,6 +89,7 @@ body #navigation.navbar {
   border-radius: 40px;
   margin: auto;
   border: none;
+  opacity: 100%;
 }
 
 .col-md-6 {
@@ -89,24 +102,35 @@ body #navigation.navbar {
   border: 0;
 }
 
-.container-info {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 15px;
-  grid-row-gap: 15px;
+.text-lg {
+  font-size: 1.5rem;
 }
 
-.info1 {
-  grid-area: 1/1/2/3;
+.text-md {
+  font-size: 1rem;
 }
 
-.info2 {
-  grid-area: 2/1/3/3;
+.bg-contact-bg {
+  background-image: url("/optimized-imgs/front-room-plant-optimized.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-.div3 {
-  grid-area: 1/3/3/6;
+.book-container h1, .book-container .h1,
+.book-txt p,
+.container-btn {
+  opacity: 1; /* Full opacity for text and button */
+}
+
+.booking-bg {
+  background-size: auto;
+  background-image: url("/optimized-imgs/front-desk-optimized.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 /*!

@@ -18,87 +18,104 @@
 
   <title>Railbender Studio</title>
 </head>
-<body class="bg-custom-tan">
+<body>
+<main>
 
 
-
+<!-- top beige block sec with logo -->
 <header>
-<div class="container-fluid">
+<div class="container-fluid px-0">
   <div class="bg-custom-beige py-5">
     <div class="row justify-content-center">
     <img src="/optimized-imgs/logo.png" class="img-fluid" alt="Centered Image">
   </div>
 </div>
 
-<!-- nav bar -->
-<nav id="navigation" class="navbar navbar-expand-lg navbar-dark custom-navbar sticky-top">
+
+<nav id="navigation">
+<nav class="navbar navbar-expand-md navbar-dark custom-navbar sticky-top">
   <div class="container-fluid">
-    <div class="collapse navbar-collapse">
-      <ul class="navbar-nav mx-auto "> 
-        <li class="nav-item px-3"><a href="http://" class="nav-link">Home</a></li>
-        <li class="nav-item px-3"><a href="http://" class="nav-link">About</a></li>
-        <li class="nav-item px-3"><a href="http://" class="nav-link">Our Artists</a></li>
-        <li class="nav-item px-3"><a href="/booking.html" class="nav-link">Book Your Tattoo</a></li>
-        <li class="nav-item px-3"><a href="/contact.html" class="nav-link">Contact Us</a></li>
-        <li class="nav-item px-3"><a href="http://" class="nav-link">FAQ</a></li>
-      </ul>
-    </div>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon">
+    </span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item px-5">
+        <a class="nav-link" href="index.html">HOME</a>
+      </li>
+      <li class="nav-item px-5">
+        <a class="nav-link" href="#">ABOUT</a>
+      </li>
+      <li class="nav-item px-5">
+        <a class="nav-link" href="#">OUR ARTISTS</a>
+      </li> 
+      <li class="nav-item px-5">
+        <a class="nav-link" href="booking.html">BOOK YOUR TATTOO</a>
+      </li>  
+      <li class="nav-item px-5">
+        <a class="nav-link" href="contact.html">CONTACT</a>
+      </li>      
+      <li class="nav-item px-5">
+        <a class="nav-link" href="#">FAQ</a>
+      </li>    
+    </ul>
+  </div>  
+  </div>
   </div>
 </nav>
-</div>
-</header>
+</nav>
 
 
 
+<div class="d-flex align-items-center vh-100 text-center bg-contact-bg">
+  <div class="container">
+    <div class="row mx-auto">
 
-
-
-<section id="contact-info"
-<div class="container-fluid py-5">
-  <div class="col-lg-6">
-
-  <div class="info1 row"> 
-    <h2>CONTACT US</h2>
-        <ul>
-          <li><a>Railbenderstudios@hotmail.com</a></li>
-          <li><a>(613) 123-1234</a></li>
-        </ul></div>
-</div>
-
-<div class="info2 row"> <h2>SOCIALS</h2>
-          <ul>
-            <li><a class="link-offset-1 link-underline link-underline-opacity-0" href="#">Instagram</a></li>
-            <li><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Twitter</a></li>
-            <li><a class="link-offset-3 link-underline link-underline-opacity-0" href="#">Facebook</a></li>
-          </ul></div>
-
-
-<div class="info3"> <h2>LOCATION</h2>
-        <p>57 Preston St, Ottawa, ON K1R 7N6</p>
-        <div class="hours">
-          <p>MON -- 10:00am-6:00pm</p>
-          <p>TUE -- 10:00am-6:00pm</p>
-          <p>WED -- 10:00am-6:00pm</p>
-          <p>THU -- 10:00am-6:00pm</p>
-          <p>FRI -- 10:00am-6:00pm</p>
-          <p>SAT -- 10:00am-6:00pm</p>
-          <p>SUN -- CLOSED</p>
+      <div class="col-md-4 mb-4">
+        <div class="bg-custom-fade-block p-4 rounded shadow text-wrap text-break">
+          <h2>CONTACT US</h2>
+          <p class="text-md">Railbenderstudios@hotmail.com</p>
+          <p class="text-lg">(613) 123-1234</p>
         </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="bg-custom-fade-block p-4 rounded shadow">
+          <h2>SOCIALS</h2>
+          <p class="text-lg"><a href="#">Instagram</a></p>
+          <p class="text-lg"><a href="#">Facebook</a></p>
+          <p class="text-lg"><a href="#">Twitter</a></p>
         </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="bg-custom-fade-block p-4 rounded shadow">
+          <h2>LOCATION</h2>
+          <p class="text-lg"><a href="#">57 Preston St, Ottawa, ON K1R 7N6</a></p>
+          <div class="hours">
+            <p class="text-md">MON -- 10:00am-6:00pm</p>
+            <p class="text-md">TUE -- 10:00am-6:00pm</p>
+            <p class="text-md">WED -- 10:00am-6:00pm</p>
+            <p class="text-md">THU -- 10:00am-6:00pm</p>
+            <p class="text-md">FRI -- 10:00am-6:00pm</p>
+            <p class="text-md">SAT -- 10:00am-6:00pm</p>
+            <p class="text-md">SUN -- CLOSED</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-</section>
 
 
 
 
 
 
-
+</main>
 
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-  <footer class="py-2 bg-dark">
+ <footer class="py-2 bg-custom-brown">
     <div class="container">
       <p class="text-center text-light m-auto">&copy; Railbender Studios</p>
     </div>
