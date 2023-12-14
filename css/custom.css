@@ -111,7 +111,7 @@ body a {
 }
 
 .bg-contact-bg {
-  background-image: url("/optimized-imgs/front-room-plant-optimized.jpg");
+  background-image: url("optimized-imgs/front-room-plant-optimized.jpg");
   background-position: center;
   background-repeat: no-repeat;
   height: 100%;
