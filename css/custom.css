@@ -127,7 +127,7 @@ body a {
 
 .booking-bg {
   background-size: auto;
-  background-image: url("/optimized-imgs/front-desk-optimized.jpeg");
+  background-image: url("optimized-imgs/front-desk-optimized.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
